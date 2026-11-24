@@ -1,0 +1,42 @@
+:root {
+  /* 60% Neutral Surfaces */
+  --bg-primary: #ffffff;
+  --bg-tinted: #f8fafc;
+
+  /* 30% Contrast & Ink */
+  --bg-dark: #111827;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-light: #f9fafb;
+  --text-muted-light: #9ca3af;
+  --border: #e5e7eb;
+
+  /* 10% Vibrant Cobalt Accent */
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-soft: #eff6ff;
+
+  /* Typography */
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* 8px Spacing Scale */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-10: 5rem;    /* 80px */
+
+  /* Layout, Radii & Shadows */
+  --container-max: 1100px;
+  --container-narrow: 720px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(17, 24, 39, 0.05);
+  --shadow-md: 0 12px 28px rgba(17, 24, 39, 0.08);
+  --transition: 0.2s ease;
+}
