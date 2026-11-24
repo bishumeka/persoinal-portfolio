@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bishaw Mekitachew | Computer Science Student</title>
+  <meta
+    name="description"
+    content="Personal portfolio of Bishaw Mekitachew, a third-year Computer Science student focused on software development, databases, and clean engineering."
+  />
+
+  <!-- Google Fonts: Space Grotesk (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheets loaded in exact cascade order -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Deferred JavaScript: downloads in parallel, runs after HTML parses -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Sticky Navigation Bar -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary Navigation">
+      <a href="#hero" class="nav__logo">
+        Bishaw<span class="accent-dot">.</span>
+      </a>
+
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contact" class="nav__link nav__cta">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero__title">
+            <span class="hero__first-name">Bishaw</span>
+            <span class="hero__last-name">Mekitachew</span>
+          </h1>
+          <p class="hero__role">Third-Year Computer Science Student</p>
+          <p class="hero__summary">
+            Curious about how software and databases work under the hood. I enjoy turning
+            computer science fundamentals into structured, reliable projects and learning new
+            technologies along the way.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Contact Me</a>
+            <a href="#projects" class="btn btn--outline">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <img
+            src="assets/images/portrait.png"
+            alt="Portrait of Bishaw Mekitachew"
+            class="hero__img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section--tinted">
+      <div class="container container--narrow">
+        <p class="eyebrow">About Me</p>
+        <h2 class="section__title">Learning by building, one system at a time.</h2>
+        <p class="about__text">
+          I'm a third-year Computer Science student exploring software development, relational
+          databases, and algorithmic problem-solving. Rather than just memorizing theory, I like
+          to understand why systems are designed the way they are—from modeling ER diagrams and
+          writing structured SQL to organizing clean object-oriented code in Java.
+        </p>
+        <p class="about__text">
+          Right now, I'm sharpening my web development fundamentals and looking forward to
+          meaningful projects, internships, and opportunities where I can contribute and keep
+          growing as an engineer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">Selected Work</p>
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <h3 class="project-card__title">Course Scheduling &amp; Timetable Database System</h3>
+            <p class="project-card__desc">
+              Designed the Entity-Relationship (ER) model and implemented a MySQL database to
+              assign, add, update, and remove course schedules using relational SQL fundamentals.
+            </p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">MySQL</li>
+              <li class="tag">ER Modeling</li>
+              <li class="tag">SQL</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Employee Management System</h3>
+            <p class="project-card__desc">
+              Built a Java application applying core OOP principles—encapsulation and inheritance—across
+              role-specific classes (Employee, Developer, Manager) with a dedicated Login Frame interface.
+            </p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">Java</li>
+              <li class="tag">OOP</li>
+              <li class="tag">Desktop GUI</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Ride-Sharing Database Management System</h3>
+            <p class="project-card__desc">
+              Designed and implemented an Oracle database system for ride-sharing operations,
+              applying advanced SQL concepts and structured relational schema design.
+            </p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">Oracle SQL</li>
+              <li class="tag">Advanced DBMS</li>
+              <li class="tag">Schema Design</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Data Structures &amp; Algorithms Suite</h3>
+            <p class="project-card__desc">
+              Implemented core sorting and searching algorithms from scratch to strengthen
+              algorithmic thinking, problem-solving, and understanding of time complexity.
+            </p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">DSA</li>
+              <li class="tag">Sorting &amp; Searching</li>
+              <li class="tag">C++ / Java</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section--tinted">
+      <div class="container">
+        <p class="eyebrow">Toolkit</p>
+        <h2 class="section__title">Skills &amp; Foundations</h2>
+
+        <div class="skills__grid">
+          <div class="skill-group">
+            <h3 class="skill-group__title">Languages</h3>
+            <ul class="tag-list">
+              <li class="tag">Java</li>
+              <li class="tag">C++</li>
+              <li class="tag">SQL</li>
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Databases &amp; CS Core</h3>
+            <ul class="tag-list">
+              <li class="tag">MySQL</li>
+              <li class="tag">Oracle Database</li>
+              <li class="tag">ER Modeling</li>
+              <li class="tag">OOP</li>
+              <li class="tag">Data Structures &amp; Algorithms</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Tools &amp; Workflow</h3>
+            <ul class="tag-list">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">VS Code</li>
+              <li class="tag">GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section--dark">
+      <div class="container container--narrow contact__inner">
+        <p class="eyebrow eyebrow--light">Get in Touch</p>
+        <h2 class="section__title section__title--light">Let's Connect</h2>
+        <p class="contact__text">
+          Have a question, project idea, or opportunity you'd like to discuss? Feel free to reach
+          out directly by email.
+        </p>
+        <div class="contact__actions">
+          <a href="mailto:bishawmekitache@gmail.com" class="btn btn--primary">
+            Email Me
+          </a>
+          <button
+            type="button"
+            class="btn btn--outline-light"
+            id="copy-email-btn"
+            data-email="bishawmekitache@gmail.com"
+          >
+            Copy Email
+          </button>
+        </div>
+        <p class="contact__feedback" id="copy-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Bishaw Mekitachew</p>
+      <a href="#hero" class="footer__top">Back to top &uarr;</a>
+    </div>
+  </footer>
+</body>
+</html>
