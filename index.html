@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Deferred JavaScript: downloads in parallel, runs after HTML parses -->
+  <!-- Deferred JavaScript -->
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -33,17 +33,31 @@
         Bishaw<span class="accent-dot">.</span>
       </a>
 
-      <button
-        class="nav__toggle"
-        type="button"
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-        aria-controls="nav-menu"
-      >
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-      </button>
+      <div class="nav__controls">
+       <button
+  type="button"
+  class="theme-toggle"
+  id="theme-toggle"
+  aria-label="Switch to dark mode"
+  aria-pressed="false"
+>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
 
       <ul class="nav__links" id="nav-menu">
         <li><a href="#about" class="nav__link">About</a></li>
@@ -86,21 +100,23 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (Educational Background + Career Goals) -->
     <section id="about" class="section section--tinted">
       <div class="container container--narrow">
         <p class="eyebrow">About Me</p>
         <h2 class="section__title">Learning by building, one system at a time.</h2>
         <p class="about__text">
-          I'm a third-year Computer Science student exploring software development, relational
-          databases, and algorithmic problem-solving. Rather than just memorizing theory, I like
-          to understand why systems are designed the way they are—from modeling ER diagrams and
+          I'm a third-year Bachelor of Science student in <strong>Computer Science</strong>
+          (at Your University Name), building a strong foundation in software engineering,
+          relational database design, and data structures &amp; algorithms. Rather than just
+          memorizing theory, I like understanding how systems work—from modeling ER diagrams and
           writing structured SQL to organizing clean object-oriented code in Java.
         </p>
         <p class="about__text">
-          Right now, I'm sharpening my web development fundamentals and looking forward to
-          meaningful projects, internships, and opportunities where I can contribute and keep
-          growing as an engineer.
+          <strong>Career Goals:</strong> My goal is to grow into a versatile software and backend
+          engineer who builds reliable, well-structured applications. I'm actively sharpening my
+          web development fundamentals and looking forward to internships and collaborative
+          projects where I can learn from experienced engineers and deliver real value.
         </p>
       </div>
     </section>
@@ -113,55 +129,91 @@
 
         <div class="projects__grid">
           <article class="project-card">
-            <h3 class="project-card__title">Course Scheduling &amp; Timetable Database System</h3>
-            <p class="project-card__desc">
-              Designed the Entity-Relationship (ER) model and implemented a MySQL database to
-              assign, add, update, and remove course schedules using relational SQL fundamentals.
-            </p>
-            <ul class="tag-list" aria-label="Skills used">
-              <li class="tag">MySQL</li>
-              <li class="tag">ER Modeling</li>
-              <li class="tag">SQL</li>
-            </ul>
+            <div class="project-card__media">
+              <img
+                src="assets/images/project-1.png"
+                alt="Course Scheduling and Timetable Database System screenshot"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Course Scheduling &amp; Timetable Database System</h3>
+              <p class="project-card__desc">
+                Designed the Entity-Relationship (ER) model and implemented a MySQL database to
+                assign, add, update, and remove course schedules using relational SQL fundamentals.
+              </p>
+              <ul class="tag-list" aria-label="Skills used">
+                <li class="tag">MySQL</li>
+                <li class="tag">ER Modeling</li>
+                <li class="tag">SQL</li>
+              </ul>
+            </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-card__title">Employee Management System</h3>
-            <p class="project-card__desc">
-              Built a Java application applying core OOP principles—encapsulation and inheritance—across
-              role-specific classes (Employee, Developer, Manager) with a dedicated Login Frame interface.
-            </p>
-            <ul class="tag-list" aria-label="Skills used">
-              <li class="tag">Java</li>
-              <li class="tag">OOP</li>
-              <li class="tag">Desktop GUI</li>
-            </ul>
+            <div class="project-card__media">
+              <img
+                src="assets/images/project-2.png"
+                alt="Employee Management System Java application screenshot"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Employee Management System</h3>
+              <p class="project-card__desc">
+                Built a Java application applying core OOP principles—encapsulation and inheritance—across
+                role-specific classes (Employee, Developer, Manager) with a dedicated Login Frame interface.
+              </p>
+              <ul class="tag-list" aria-label="Skills used">
+                <li class="tag">Java</li>
+                <li class="tag">OOP</li>
+                <li class="tag">Desktop GUI</li>
+              </ul>
+            </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-card__title">Ride-Sharing Database Management System</h3>
-            <p class="project-card__desc">
-              Designed and implemented an Oracle database system for ride-sharing operations,
-              applying advanced SQL concepts and structured relational schema design.
-            </p>
-            <ul class="tag-list" aria-label="Skills used">
-              <li class="tag">Oracle SQL</li>
-              <li class="tag">Advanced DBMS</li>
-              <li class="tag">Schema Design</li>
-            </ul>
+            <div class="project-card__media">
+              <img
+                src="assets/images/project-3.png"
+                alt="Ride-Sharing Database Management System Oracle SQL screenshot"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Ride-Sharing Database Management System</h3>
+              <p class="project-card__desc">
+                Designed and implemented an Oracle database system for ride-sharing operations,
+                applying advanced SQL concepts and structured relational schema design.
+              </p>
+              <ul class="tag-list" aria-label="Skills used">
+                <li class="tag">Oracle SQL</li>
+                <li class="tag">Advanced DBMS</li>
+                <li class="tag">Schema Design</li>
+              </ul>
+            </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-card__title">Data Structures &amp; Algorithms Suite</h3>
-            <p class="project-card__desc">
-              Implemented core sorting and searching algorithms from scratch to strengthen
-              algorithmic thinking, problem-solving, and understanding of time complexity.
-            </p>
-            <ul class="tag-list" aria-label="Skills used">
-              <li class="tag">DSA</li>
-              <li class="tag">Sorting &amp; Searching</li>
-              <li class="tag">C++ / Java</li>
-            </ul>
+            <div class="project-card__media">
+              <img
+                src="assets/images/project-4.png"
+                alt="Data Structures and Algorithms Suite screenshot"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Data Structures &amp; Algorithms Suite</h3>
+              <p class="project-card__desc">
+                Implemented core sorting and searching algorithms from scratch to strengthen
+                algorithmic thinking, problem-solving, and understanding of time complexity.
+              </p>
+              <ul class="tag-list" aria-label="Skills used">
+                <li class="tag">DSA</li>
+                <li class="tag">Sorting &amp; Searching</li>
+                <li class="tag">C++ / Java</li>
+              </ul>
+            </div>
           </article>
         </div>
       </div>
@@ -210,29 +262,94 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (Links + Validated Form) -->
     <section id="contact" class="section section--dark">
-      <div class="container container--narrow contact__inner">
-        <p class="eyebrow eyebrow--light">Get in Touch</p>
-        <h2 class="section__title section__title--light">Let's Connect</h2>
-        <p class="contact__text">
-          Have a question, project idea, or opportunity you'd like to discuss? Feel free to reach
-          out directly by email.
-        </p>
-        <div class="contact__actions">
-          <a href="mailto:bishawmekitache@gmail.com" class="btn btn--primary">
-            Email Me
-          </a>
-          <button
-            type="button"
-            class="btn btn--outline-light"
-            id="copy-email-btn"
-            data-email="bishawmekitache@gmail.com"
-          >
-            Copy Email
-          </button>
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow eyebrow--light">Get in Touch</p>
+          <h2 class="section__title section__title--light">Let's Connect</h2>
+          <p class="contact__text">
+            Have a question, project idea, or opportunity you'd like to discuss? Send a message
+            using the form or reach out directly.
+          </p>
+
+          <div class="contact__actions">
+            <a href="mailto:your.email@example.com" class="btn btn--primary">Email Me</a>
+            <button
+              type="button"
+              class="btn btn--outline-light"
+              id="copy-email-btn"
+              data-email="your.email@example.com"
+            >
+              Copy Email
+            </button>
+          </div>
+          <p class="contact__feedback" id="copy-feedback" aria-live="polite"></p>
+
+          <div class="contact__socials">
+            <a
+              href="https://github.com/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
-        <p class="contact__feedback" id="copy-feedback" aria-live="polite"></p>
+
+        <!-- Contact Form (novalidate lets our custom JS handle validation) -->
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Full Name</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              class="form-input"
+              placeholder="Your name"
+              required
+            />
+            <span class="form-error" id="name-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              class="form-input"
+              placeholder="you@example.com"
+              required
+            />
+            <span class="form-error" id="email-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="4"
+              class="form-input"
+              placeholder="Write your message (at least 10 characters)..."
+              required
+            ></textarea>
+            <span class="form-error" id="message-error" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-submit">Send Message</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>

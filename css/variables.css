@@ -2,6 +2,8 @@
   /* 60% Neutral Surfaces */
   --bg-primary: #ffffff;
   --bg-tinted: #f8fafc;
+  --bg-header: rgba(255, 255, 255, 0.9);
+  --bg-hero-media: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%);
 
   /* 30% Contrast & Ink */
   --bg-dark: #111827;
@@ -15,6 +17,8 @@
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
   --accent-soft: #eff6ff;
+  --error: #ef4444;
+  --success: #22c55e;
 
   /* Typography */
   --font-heading: "Space Grotesk", system-ui, sans-serif;
@@ -39,4 +43,23 @@
   --shadow-sm: 0 2px 8px rgba(17, 24, 39, 0.05);
   --shadow-md: 0 12px 28px rgba(17, 24, 39, 0.08);
   --transition: 0.2s ease;
+}
+
+/* Dark Theme Token Overrides */
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-tinted: #1e293b;
+  --bg-header: rgba(15, 23, 42, 0.9);
+  --bg-hero-media: linear-gradient(145deg, #1e293b 0%, #1d4ed8 100%);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --border: #334155;
+
+  --accent: #60a5fa;
+  --accent-hover: #3b82f6;
+  --accent-soft: rgba(96, 165, 250, 0.15);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45);
 }
