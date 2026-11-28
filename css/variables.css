@@ -1,65 +1,69 @@
 :root {
-  /* 60% Neutral Surfaces */
-  --bg-primary: #ffffff;
-  --bg-tinted: #f8fafc;
-  --bg-header: rgba(255, 255, 255, 0.9);
-  --bg-hero-media: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%);
+  --bg-primary: #f5f7ff;
+  --bg-tinted: #eaeefd;
+  --bg-card: #ffffff;
+  --bg-header: rgba(245, 247, 255, 0.9);
+  --bg-dark: #14142b;
 
-  /* 30% Contrast & Ink */
-  --bg-dark: #111827;
-  --text-primary: #111827;
-  --text-secondary: #4b5563;
-  --text-light: #f9fafb;
-  --text-muted-light: #9ca3af;
-  --border: #e5e7eb;
+  --text-primary: #14142b;
+  --text-secondary: #55566e;
+  --text-light: #f4f4ff;
+  --text-muted-light: #a3a4c4;
+  --border: #dde1f4;
 
-  /* 10% Vibrant Cobalt Accent */
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-soft: #eff6ff;
-  --error: #ef4444;
-  --success: #22c55e;
+  --accent: #e11043;
+  --accent-hover: #be0b36;
+  --accent-soft: #ffe8ee;
+  --accent-light: #ff6b8f;
+  --tag-text: #be0b36;
+  --cta-bg: #14142b;
+  --error: #ff6b6b;
 
-  /* Typography */
+  --hero-glow: rgba(120, 130, 210, 0.2);
+  --hero-brush: url("../assets/images/hero-brush-light.webp");
+  --hero-brush-opacity: 0.85;
+  --hero-shadow: rgba(20, 20, 60, 0.3);
+
   --font-heading: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
-  /* 8px Spacing Scale */
-  --space-1: 0.5rem;   /* 8px */
-  --space-2: 1rem;     /* 16px */
-  --space-3: 1.5rem;   /* 24px */
-  --space-4: 2rem;     /* 32px */
-  --space-6: 3rem;     /* 48px */
-  --space-8: 4rem;     /* 64px */
-  --space-10: 5rem;    /* 80px */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-10: 5rem;
 
-  /* Layout, Radii & Shadows */
-  --container-max: 1100px;
-  --container-narrow: 720px;
   --radius-sm: 6px;
   --radius-md: 12px;
-  --radius-lg: 24px;
   --radius-full: 9999px;
-  --shadow-sm: 0 2px 8px rgba(17, 24, 39, 0.05);
-  --shadow-md: 0 12px 28px rgba(17, 24, 39, 0.08);
+  --shadow-sm: 0 2px 8px rgba(20, 20, 60, 0.06);
+  --shadow-md: 0 12px 28px rgba(20, 20, 60, 0.12);
   --transition: 0.2s ease;
 }
 
-/* Dark Theme Token Overrides */
 [data-theme="dark"] {
-  --bg-primary: #0f172a;
-  --bg-tinted: #1e293b;
-  --bg-header: rgba(15, 23, 42, 0.9);
-  --bg-hero-media: linear-gradient(145deg, #1e293b 0%, #1d4ed8 100%);
+  --bg-primary: #0d0d1f;
+  --bg-tinted: #15152e;
+  --bg-card: #1b1b3a;
+  --bg-header: rgba(13, 13, 31, 0.9);
 
-  --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --border: #334155;
+  --text-primary: #f4f4ff;
+  --text-secondary: #b5b6d3;
+  --border: #2b2d52;
 
-  --accent: #60a5fa;
-  --accent-hover: #3b82f6;
-  --accent-soft: rgba(96, 165, 250, 0.15);
+  --accent: #ff4d79;
+  --accent-hover: #ff2b62;
+  --accent-soft: rgba(255, 77, 121, 0.15);
+  --tag-text: #ff7a9c;
+  --cta-bg: #e11043;
 
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45);
+  --hero-glow: rgba(255, 77, 121, 0.14);
+  --hero-brush: url("../assets/images/hero-brush-dark.webp");
+  --hero-brush-opacity: 0.75;
+  --hero-shadow: rgba(0, 0, 0, 0.6);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.5);
 }

@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Keeps sticky navbar from covering section titles */
+  scroll-padding-top: 80px;
 }
 
 body,

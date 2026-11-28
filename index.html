@@ -4,60 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bishaw Mekitachew | Computer Science Student</title>
-  <meta
-    name="description"
-    content="Personal portfolio of Bishaw Mekitachew, a third-year Computer Science student focused on software development, databases, and clean engineering."
-  />
-
-  <!-- Google Fonts: Space Grotesk (headings) + Inter (body) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Stylesheets loaded in exact cascade order -->
+  <meta name="description" content="Personal portfolio of Bishaw Mekitachew, a third-year Computer Science student focused on software development, databases, and clean engineering." />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Deferred JavaScript -->
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  <!-- Sticky Navigation Bar -->
   <header class="site-header">
-    <nav class="nav container" aria-label="Primary Navigation">
-      <a href="#hero" class="nav__logo">
-        Bishaw<span class="accent-dot">.</span>
-      </a>
-
-      <div class="nav__controls">
-       <button
-  type="button"
-  class="theme-toggle"
-  id="theme-toggle"
-  aria-label="Switch to dark mode"
-  aria-pressed="false"
->
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-  </svg>
-</button>
-
-        <button
-          class="nav__toggle"
-          type="button"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span class="nav__toggle-bar"></span>
-          <span class="nav__toggle-bar"></span>
-          <span class="nav__toggle-bar"></span>
-        </button>
-      </div>
+    <nav class="nav container" aria-label="Primary">
+      <a href="#hero" class="nav__logo">Bishaw<span>.</span></a>
 
       <ul class="nav__links" id="nav-menu">
         <li><a href="#about" class="nav__link">About</a></li>
@@ -65,14 +21,28 @@
         <li><a href="#skills" class="nav__link">Skills</a></li>
         <li><a href="#contact" class="nav__link nav__cta">Contact Me</a></li>
       </ul>
+
+      <div class="nav__controls">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Dark mode" aria-pressed="false">
+          <svg class="theme-toggle__moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="theme-toggle__sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+        </button>
+        <button type="button" class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="container hero__grid">
-        <div class="hero__content">
+        <div>
           <p class="eyebrow">Hello, I'm</p>
           <h1 class="hero__title">
             <span class="hero__first-name">Bishaw</span>
@@ -80,9 +50,9 @@
           </h1>
           <p class="hero__role">Third-Year Computer Science Student</p>
           <p class="hero__summary">
-            Curious about how software and databases work under the hood. I enjoy turning
-            computer science fundamentals into structured, reliable projects and learning new
-            technologies along the way.
+            Curious about how software and databases work under the hood. I enjoy turning computer
+            science fundamentals into structured, reliable projects and learning new technologies
+            along the way.
           </p>
           <div class="hero__actions">
             <a href="#contact" class="btn btn--primary">Contact Me</a>
@@ -91,264 +61,165 @@
         </div>
 
         <div class="hero__media">
-          <img
-            src="assets/images/portrait.png"
-            alt="Portrait of Bishaw Mekitachew"
-            class="hero__img"
-          />
+          <div class="hero__brush"></div>
+          <img src="assets/images/hero-person.png" class="hero__img" 
+           width="712" height="961" 
+           fetchpriority="high" />
         </div>
       </div>
     </section>
 
-    <!-- About Section (Educational Background + Career Goals) -->
     <section id="about" class="section section--tinted">
       <div class="container container--narrow">
         <p class="eyebrow">About Me</p>
         <h2 class="section__title">Learning by building, one system at a time.</h2>
         <p class="about__text">
-          I'm a third-year Bachelor of Science student in <strong>Computer Science</strong>
-          (at Your University Name), building a strong foundation in software engineering,
-          relational database design, and data structures &amp; algorithms. Rather than just
-          memorizing theory, I like understanding how systems work—from modeling ER diagrams and
-          writing structured SQL to organizing clean object-oriented code in Java.
+          I'm a third-year Bachelor of Science student in <strong>Computer Science</strong> at
+          Wolaita Sodo University, building a strong foundation in software engineering, relational
+          database design, and data structures &amp; algorithms. Rather than just memorizing theory,
+          I like understanding how systems work—from modeling ER diagrams and writing structured SQL
+          to organizing clean object-oriented code in Java.
         </p>
         <p class="about__text">
           <strong>Career Goals:</strong> My goal is to grow into a versatile software and backend
-          engineer who builds reliable, well-structured applications. I'm actively sharpening my
-          web development fundamentals and looking forward to internships and collaborative
-          projects where I can learn from experienced engineers and deliver real value.
+          engineer who builds reliable, well-structured applications. I'm actively sharpening my web
+          development fundamentals and looking forward to internships and collaborative projects
+          where I can learn from experienced engineers and deliver real value.
         </p>
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
       <div class="container">
         <p class="eyebrow">Selected Work</p>
         <h2 class="section__title">Projects</h2>
-
         <div class="projects__grid">
-          <article class="project-card">
-            <div class="project-card__media">
-              <img
-                src="assets/images/project-1.png"
-                alt="Course Scheduling and Timetable Database System screenshot"
-                class="project-card__img"
-              />
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Course Scheduling &amp; Timetable Database System</h3>
-              <p class="project-card__desc">
-                Designed the Entity-Relationship (ER) model and implemented a MySQL database to
-                assign, add, update, and remove course schedules using relational SQL fundamentals.
-              </p>
-              <ul class="tag-list" aria-label="Skills used">
-                <li class="tag">MySQL</li>
-                <li class="tag">ER Modeling</li>
-                <li class="tag">SQL</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__media">
-              <img
-                src="assets/images/project-2.png"
-                alt="Employee Management System Java application screenshot"
-                class="project-card__img"
-              />
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Employee Management System</h3>
-              <p class="project-card__desc">
-                Built a Java application applying core OOP principles—encapsulation and inheritance—across
-                role-specific classes (Employee, Developer, Manager) with a dedicated Login Frame interface.
-              </p>
-              <ul class="tag-list" aria-label="Skills used">
-                <li class="tag">Java</li>
-                <li class="tag">OOP</li>
-                <li class="tag">Desktop GUI</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__media">
-              <img
-                src="assets/images/project-3.png"
-                alt="Ride-Sharing Database Management System Oracle SQL screenshot"
-                class="project-card__img"
-              />
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Ride-Sharing Database Management System</h3>
-              <p class="project-card__desc">
-                Designed and implemented an Oracle database system for ride-sharing operations,
-                applying advanced SQL concepts and structured relational schema design.
-              </p>
-              <ul class="tag-list" aria-label="Skills used">
-                <li class="tag">Oracle SQL</li>
-                <li class="tag">Advanced DBMS</li>
-                <li class="tag">Schema Design</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__media">
-              <img
-                src="assets/images/project-4.png"
-                alt="Data Structures and Algorithms Suite screenshot"
-                class="project-card__img"
-              />
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Data Structures &amp; Algorithms Suite</h3>
-              <p class="project-card__desc">
-                Implemented core sorting and searching algorithms from scratch to strengthen
-                algorithmic thinking, problem-solving, and understanding of time complexity.
-              </p>
-              <ul class="tag-list" aria-label="Skills used">
-                <li class="tag">DSA</li>
-                <li class="tag">Sorting &amp; Searching</li>
-                <li class="tag">C++ / Java</li>
-              </ul>
-            </div>
-          </article>
+        <article class="project-card">
+          <img src="assets/images/project-1.png" alt="Screenshot of Course Scheduling &amp; Timetable Database System" class="project-card__img" loading="lazy" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Course Scheduling &amp; Timetable Database System</h3>
+            <p class="project-card__desc">Designed the Entity-Relationship (ER) model and implemented a MySQL database to assign, add, update, and remove course schedules using relational SQL fundamentals.</p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">MySQL</li>
+              <li class="tag">ER Modeling</li>
+              <li class="tag">SQL</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/images/project-2.png" alt="Screenshot of Employee Management System" class="project-card__img" loading="lazy" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Employee Management System</h3>
+            <p class="project-card__desc">Built a Java application applying core OOP principles—encapsulation and inheritance—across role-specific classes (Employee, Developer, Manager) with a dedicated Login Frame interface.</p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">Java</li>
+              <li class="tag">OOP</li>
+              <li class="tag">Desktop GUI</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/images/project-3.png" alt="Screenshot of Ride-Sharing Database Management System" class="project-card__img" loading="lazy" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Ride-Sharing Database Management System</h3>
+            <p class="project-card__desc">Designed and implemented an Oracle database system for ride-sharing operations, applying advanced SQL concepts and structured relational schema design.</p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">Oracle SQL</li>
+              <li class="tag">Advanced DBMS</li>
+              <li class="tag">Schema Design</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/images/project-4.png" alt="Screenshot of Data Structures &amp; Algorithms Suite" class="project-card__img" loading="lazy" />
+          <div class="project-card__body">
+            <h3 class="project-card__title">Data Structures &amp; Algorithms Suite</h3>
+            <p class="project-card__desc">Implemented core sorting and searching algorithms from scratch to strengthen algorithmic thinking, problem-solving, and understanding of time complexity.</p>
+            <ul class="tag-list" aria-label="Skills used">
+              <li class="tag">DSA</li>
+              <li class="tag">Sorting &amp; Searching</li>
+              <li class="tag">C++ / Java</li>
+            </ul>
+          </div>
+        </article>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section section--tinted">
       <div class="container">
         <p class="eyebrow">Toolkit</p>
         <h2 class="section__title">Skills &amp; Foundations</h2>
-
         <div class="skills__grid">
-          <div class="skill-group">
-            <h3 class="skill-group__title">Languages</h3>
-            <ul class="tag-list">
-              <li class="tag">Java</li>
-              <li class="tag">C++</li>
-              <li class="tag">SQL</li>
-              <li class="tag">HTML5</li>
-              <li class="tag">CSS3</li>
-              <li class="tag">JavaScript</li>
-            </ul>
-          </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group__title">Databases &amp; CS Core</h3>
-            <ul class="tag-list">
-              <li class="tag">MySQL</li>
-              <li class="tag">Oracle Database</li>
-              <li class="tag">ER Modeling</li>
-              <li class="tag">OOP</li>
-              <li class="tag">Data Structures &amp; Algorithms</li>
-            </ul>
-          </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group__title">Tools &amp; Workflow</h3>
-            <ul class="tag-list">
-              <li class="tag">Git</li>
-              <li class="tag">GitHub</li>
-              <li class="tag">VS Code</li>
-              <li class="tag">GitHub Pages</li>
-            </ul>
-          </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Languages</h3>
+          <ul class="tag-list">
+            <li class="tag">Java</li>
+            <li class="tag">C++</li>
+            <li class="tag">SQL</li>
+            <li class="tag">HTML5</li>
+            <li class="tag">CSS3</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Databases &amp; CS Core</h3>
+          <ul class="tag-list">
+            <li class="tag">MySQL</li>
+            <li class="tag">Oracle Database</li>
+            <li class="tag">ER Modeling</li>
+            <li class="tag">OOP</li>
+            <li class="tag">Data Structures &amp; Algorithms</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Tools &amp; Workflow</h3>
+          <ul class="tag-list">
+            <li class="tag">Git</li>
+            <li class="tag">GitHub</li>
+            <li class="tag">VS Code</li>
+            <li class="tag">GitHub Pages</li>
+          </ul>
+        </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section (Links + Validated Form) -->
     <section id="contact" class="section section--dark">
       <div class="container contact__grid">
-        <div class="contact__info">
-          <p class="eyebrow eyebrow--light">Get in Touch</p>
-          <h2 class="section__title section__title--light">Let's Connect</h2>
+        <div>
+          <p class="eyebrow">Get in Touch</p>
+          <h2 class="section__title">Let's Connect</h2>
           <p class="contact__text">
+   
             Have a question, project idea, or opportunity you'd like to discuss? Send a message
             using the form or reach out directly.
           </p>
-
           <div class="contact__actions">
-            <a href="mailto:your.email@example.com" class="btn btn--primary">Email Me</a>
-            <button
-              type="button"
-              class="btn btn--outline-light"
-              id="copy-email-btn"
-              data-email="your.email@example.com"
-            >
-              Copy Email
-            </button>
+            <a href="mailto:bishawmekitachew@gmail.com" class="btn btn--primary" id="email-link">Email Me</a>
+            <button type="button" class="btn btn--outline-light" id="copy-email">Copy Email</button>
           </div>
-          <p class="contact__feedback" id="copy-feedback" aria-live="polite"></p>
-
+          <p class="contact__status" id="copy-status" aria-live="polite"></p>
           <div class="contact__socials">
-            <a
-              href="https://github.com/your-username"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/your-username"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link"
-            >
-              LinkedIn
-            </a>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+            <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
           </div>
         </div>
 
-        <!-- Contact Form (novalidate lets our custom JS handle validation) -->
-        <form class="contact-form" id="contact-form" novalidate>
-          <div class="form-group">
+        <form class="contact-form" id="contact-form">
+          <div>
             <label for="contact-name" class="form-label">Full Name</label>
-            <input
-              type="text"
-              id="contact-name"
-              name="name"
-              class="form-input"
-              placeholder="Your name"
-              required
-            />
-            <span class="form-error" id="name-error" aria-live="polite"></span>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" autocomplete="name" minlength="2" required />
           </div>
-
-          <div class="form-group">
+          <div>
             <label for="contact-email" class="form-label">Email Address</label>
-            <input
-              type="email"
-              id="contact-email"
-              name="email"
-              class="form-input"
-              placeholder="you@example.com"
-              required
-            />
-            <span class="form-error" id="email-error" aria-live="polite"></span>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="you@example.com" autocomplete="email" required />
           </div>
-
-          <div class="form-group">
+          <div>
             <label for="contact-message" class="form-label">Message</label>
-            <textarea
-              id="contact-message"
-              name="message"
-              rows="4"
-              class="form-input"
-              placeholder="Write your message (at least 10 characters)..."
-              required
-            ></textarea>
-            <span class="form-error" id="message-error" aria-live="polite"></span>
+            <textarea id="contact-message" name="message" rows="4" class="form-input" placeholder="Write your message (at least 10 characters)..." minlength="10" required></textarea>
           </div>
-
-          <button type="submit" class="btn btn--primary form-submit">Send Message</button>
-          <p class="form-status" id="form-status" aria-live="polite"></p>
+          <button type="submit" class="btn btn--primary">Send Message</button>
         </form>
       </div>
     </section>
